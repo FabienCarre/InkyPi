@@ -1,0 +1,21 @@
+{% extends "plugin.html" %}
+
+{% block content %}
+<div class="horaires">
+    {% for horaire in horaires_divia %}
+    <div class="horaires-divia">
+        <h2 class="horaires-divia-title">{{ horaire.title }}</h2>
+        <div class="horaires-divia-list">
+            {% for item in horaire["items"] %}
+            <div class="horaire-divia-item">
+                <span class="horaire-divia-direction">Direction {{ item.direction }} :</span>
+                {% for time in item.time %}
+                    <span class="horaire-divia-time">{{ time }}</span>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

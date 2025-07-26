@@ -1,0 +1,58 @@
+.horaires {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horaires-divia {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 20px;
+    max-width: 400px;
+    margin: 24px auto;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: #2d2d2d;
+}
+
+.horaires-divia-title {
+    color: #e2007a; /* Divia pink */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.horaires-divia-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.horaire-divia-item {
+    display: flex;
+    align-items: center;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px 14px;
+    box-shadow: 0 1px 3px rgba(226,0,122,0.06);
+}
+
+.horaire-divia-direction {
+    color: #e2007a;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.horaire-divia-time {
+    color: #2d2d2d;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: #e2007a;
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-left: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
